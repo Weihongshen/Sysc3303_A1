@@ -2,7 +2,7 @@
  * packets before passing them along to 
  * their final destinations.
  */
-package a1;
+package a1; 
 import java.io.*;
 import java.net.*;
 
@@ -152,11 +152,9 @@ public class IntermediateHost {
 	}
 	
 	
-	// Receives packets from the client and passes
-	//them along to the server. Or vice versa.
-	public void receiveAndPassAlong() {
-		// Construct a DatagramPacket for receiving packets up 
-		// to 100 bytes long
+	// Receive and pass the packet to server from client.
+	public void receiveAndPass() {
+		// Construct a DatagramPacket for receiving packets 
 		byte data[] = new byte[100];
 		receivePacket = new DatagramPacket(data, data.length);
 		
@@ -182,8 +180,8 @@ public class IntermediateHost {
 	}
 	
 	public static void main(String[] args) {
-		IntermediateHost ih = new IntermediateHost();
-		ih.receiveAndPassAlong();
+		IntermediateHost h = new IntermediateHost();
+		h.receiveAndPass();
 
 	}
 

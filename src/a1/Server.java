@@ -1,7 +1,7 @@
 /* The server receive packet from client
  * and echo back to the server.
  */
-package a1;
+package a1; 
 
 import java.io.*;
 import java.net.*;

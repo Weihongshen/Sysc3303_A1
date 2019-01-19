@@ -1,7 +1,7 @@
 /* The client sent message to the echo server 
  * and receive from server.
  */
-package a1;
+package a1; 
 
 import java.io.*;
 import java.net.*;

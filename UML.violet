@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_162" class="java.beans.XMLDecoder">
+ <object class="com.horstmann.violet.ClassDiagramGraph">
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode0">
+    <void property="attributes">
+     <void property="text">
+      <string>- sendPacket, receivePacket : DatagramPacket
+- sendReceiveSocket : DatagramSocket</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>-byteMsg(bMsg : byte[], rInit : char, filename : String, mode : String)
+-printByteMsg(bMsg : byte[], len : int)
+-sendPacket(bMsg : byte[])
+-receivePacket()
++sendAndReceive()
++main(args : String[])</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Client</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double0">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double0"/>
+      <double>240.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double0"/>
+      <double>150.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>240.0</double>
+     <double>150.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode1">
+    <void property="attributes">
+     <void property="text">
+      <string>-sendPacket, receivePacket : DatagramPacket
+-receiveSocket, sendSocket, sendReceiveSocket : DatagramSocket
+-clientPort : int</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>-printByteMsg(bMsg : byte[], len : int)
+-receiveClientPacket(data : byte[])
+-sendClientPacket(data : byte[])
+-sendServerPacket(data : byte[])
+-receiveServerPacket(data : byte[])
+-receiveAndPass()
++main(args : String[])
+</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>IntermediateHost</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double1">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double1"/>
+      <double>720.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double1"/>
+      <double>150.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>720.0</double>
+     <double>150.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode2">
+    <void property="attributes">
+     <void property="text">
+      <string>-sendPacket, receivePacket : DatagramPacket
+-sendSocket, receiveSocket : DatagramSocket</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>-printByteMsg(bMsg : byte[], len : int)
+-receivePacket(data[] : byte)
+-parsePacket(data[] : byte)
+-sendPacket(bMsg : byte[])
++receiveAndRespond()
++main(args : String[])</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Server</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double2">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double2"/>
+      <double>1200.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double2"/>
+      <double>150.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>1200.0</double>
+     <double>150.0</double>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

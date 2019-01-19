@@ -7,7 +7,7 @@ Client.java file is used to send message to the server program and then receive 
 
 IntermediateHost.java is a intermediate host to pass the message to the server from client.  
 
-Server.java is receive message from client (through interhost) and then parse the message and send back to the 
+Server.java is receive message from client (through intermediate host) and then parse the message and send back to the 
 client.  
 
 # Set up step:  
