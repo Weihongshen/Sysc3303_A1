@@ -1,7 +1,7 @@
 /* The client sent message to the echo server 
  * and receive from server.
  */
-package a1; 
+package a1;
 
 import java.io.*;
 import java.net.*;
@@ -76,10 +76,9 @@ public class Client {
 	private void sendPacket(byte[] bMsg) {
 		// Create the Datagram packet
 		try {
-			sendPacket = new DatagramPacket(bMsg, bMsg.length, 
-					InetAddress.getLocalHost(), 23); 
-			
-		} catch (UnknownHostException e) {//through unknown host
+			sendPacket = new DatagramPacket(bMsg, bMsg.length, InetAddress.getLocalHost(), 23);
+
+		} catch (UnknownHostException e) {// through unknown host
 			e.printStackTrace();
 			System.exit(1);
 		}
@@ -166,7 +165,7 @@ public class Client {
 
 			// Waiting for receive.
 			this.receivePacket();
-		} 
+		}
 
 		// Finished, close the socket.
 		sendReceiveSocket.close();

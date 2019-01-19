@@ -1,7 +1,7 @@
 /* The server receive packet from client
  * and echo back to the server.
  */
-package a1; 
+package a1;
 
 import java.io.*;
 import java.net.*;
@@ -69,7 +69,7 @@ public class Server {
 			System.exit(1);
 		}
 
-		if ((data[1] == (byte) 1) || (data[1] == (byte) 2)) { 
+		if ((data[1] == (byte) 1) || (data[1] == (byte) 2)) {
 		} else {
 			System.out.println("ERROR - Second byte incorrect.");
 			System.exit(1);
@@ -136,8 +136,8 @@ public class Server {
 		byte data[] = new byte[100];
 		receivePacket = new DatagramPacket(data, data.length);
 
-		int i = 1; 
-		while (true) { 
+		int i = 1;
+		while (true) {
 			System.out.println("--------------------------------------------------------");
 			System.out.println("--------------------------------------------------------");
 			System.out.println("Server: Waiting for Packet. Round #" + i);
@@ -169,7 +169,7 @@ public class Server {
 
 			// Create a new Datagram packet and send the message
 			this.sendPacket(bMsg);
-		} 
+		}
 	}
 
 	public static void main(String[] args) {
