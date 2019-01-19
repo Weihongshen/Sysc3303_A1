@@ -1,4 +1,16 @@
 # Sysc3303_Assignment_1
 Weihong shen 100980200  
 
-This assignment contain 3 java file
+# File contain:  
+
+Client.java file is used to send message to the server program and then receive back from server.  
+
+IntermediateHost.java is a intermediate host to pass the message to the server from client.  
+
+Server.java is receive message from client (through interhost) and then parse the message and send back to the 
+client.  
+
+# Set up step:  
+1.Run the Server.java.(showing waiting)  
+2.Run the IntermediateHost.java(showing waiting)  
+3.Run the Client.java.(showing message)  
