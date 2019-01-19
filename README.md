@@ -11,8 +11,10 @@ Server.java is receive message from client (through interhost) and then parse th
 client.  
 
 # Set up step:  
-1.Run the Server.java.(showing waiting)  
+1.Run the Server.java.  
 
-2.Run the IntermediateHost.java(showing waiting)  
+2.Run the IntermediateHost.java  
 
-3.Run the Client.java.(showing message)  
+3.Run the Client.java.  
+
+Then message showing in the console.
